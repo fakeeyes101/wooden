@@ -1,0 +1,324 @@
+
+/* adding start here */
+
+header .topper
+{
+  padding: 0 40PX 40px;
+  max-width: none;
+  border-bottom: 2px solid black;
+  margin-bottom: 60px;
+
+}
+
+.text
+{
+  margin: 0 0 0 0;
+  font-family: 'Sriracha', cursive;
+  -webkit-text-stroke: .2px black;
+  font-size: 1rem;
+}
+
+
+
+.logo
+{
+  /*width: 400px;*/
+  width:100%;
+
+  height: auto;
+  margin: auto;
+  float: left;
+}
+
+/*hr{
+  color: red;
+  margin-top: 60px;
+}*/
+
+/* end adding here */
+
+
+
+body
+{
+  padding-top: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background: #E0E0E0;
+
+  border-left: 2PX solid black;
+  border-right:2px solid black;
+}
+
+.container
+{
+
+  padding: 20px 40px 40px;
+  max-width: none;
+  color: #3399FF;
+  margin-top: 10px;
+}
+
+.container .image
+{
+  height: auto;
+  width: 100%;
+  margin: 100px 100px 100px 0;
+  float: left;
+}
+
+.container .image:hover
+{
+  transform: scale(1.3);
+  transition: transform 3s;
+  overflow: hidden;
+
+}
+
+.containertext
+{
+  margin-top: 100px;
+  font-family: 'Sriracha', cursive;
+  -webkit-text-stroke: .2px black;
+  font-size: 1.2rem;
+
+}
+
+
+.topper
+{
+  font-family: 'Sriracha', cursive;
+  color: #e89f71;
+  -webkit-text-stroke: .2px black;
+
+}
+
+hr
+{
+  color: #e89f71;
+}
+
+/*.middle .fab
+{
+  padding: 50px;
+
+}
+
+
+
+
+
+
+
+
+.middle .fab:hover
+{
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+*/
+
+.middle
+{
+
+top: 50%;
+transform: translateY(-50%);
+
+width: 100%;
+
+text-align:center; /* make it center box */
+
+
+
+}
+
+.button
+{
+  width: 50%;
+  height: auto;
+
+  margin: 10px; /* surrounding space */
+  border-radius: .5%; /*halo around the icon 100% means circle*/
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #e89f71;
+  overflow: hidden;
+  position: relative;
+
+  margin-bottom: 10px;
+}
+
+.button:hover
+{
+  transform: scale(1.3);
+  color: #2ec1ac;
+}
+
+.button i {
+
+  transition: 0.3s linear;
+}
+
+.btn{
+
+  /*width: 90px;
+  height: 90px;*/
+  width: 100%;
+  height: auto;
+  background: #f1f1f1;
+  margin: 10px; /* surrounding space */
+  border-radius: 30%; /*halo around the icon 100% means circle*/
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  margin-bottom: 10px;
+
+}
+.btn i{
+  line-height: 90px;/* make the icon in the middle of the box */
+  font-size: 36px;/* make the icon bigger*/
+  transition: 0.2s linear;
+}
+.btn:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+
+/*
+@media screen and (maxwidth:1000px){
+  header .topper .logo
+  {
+    width: 100%;
+    position:absolute;
+  }
+
+  header .topper .text
+  {
+    color: red;
+  }
+
+  body .container .image
+  {
+    width: 50%;
+    margin: auto;
+  }
+
+  body .container .containertext
+  {
+    width: 100%;
+    position:absolute;
+  }
+
+  .btn {
+    margin: auto;
+
+  }
+
+}
+*/
+
+@media only screen and (max-width: 1000px) /*small condition */
+{
+  .containertext{
+    color: #e89f71;
+    text-align: center;
+
+  }
+
+  .text {
+    text-align: center;
+    font-size: 1rem;
+    color: #28df99;
+    padding-top: 100px;
+
+
+  }
+
+  body {
+    background-color: white;
+  }
+
+  header {
+  /*  background-image: url('หัวป้ายไม้.jpg');*/
+    background-size: cover;
+    background-blend-mode: lighten;
+  }
+
+  .logo
+  {
+    width: 70%;
+    position: absolute;
+    margin-top: -150px;
+
+  }
+
+  body
+  {
+    padding-top:100px;
+    background-color: #edcfa9;
+  }
+
+  .image
+  {
+
+    width:50%;
+    height:50%;
+  }
+}
+
+@media only screen and (min-width: 600px) /*big condition*/
+{
+  .logo{
+
+    width: 50%;
+    float: left;
+    margin: 100px;
+    margin-top: -150px;
+    margin-left: -80px;
+
+  }
+
+  body {
+    background-color: #edcfa9;
+  }
+
+  .containertext
+  {
+    font-size: 2rem;
+    color:#e89f71;
+  }
+
+  .text {
+    color:#e89f71;
+    font-size: 2rem;
+  }
+}

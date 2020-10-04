@@ -1,0 +1,135 @@
+
+/*header{
+  background: #edcfa9;
+  margin:10px;
+  height : 80vh;
+  -webkit-background-size :cover;
+  background-size :cover;
+  background-position: center center;
+  position : relative;
+
+
+}*/
+
+h1
+{
+  font-family: 'Sriracha', cursive;
+  -webkit-text-stroke: .2px black;
+  color: #e89f71;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  /*background-image: url("ป้ายไม้สักทอง.jpg");*/
+  /*background: #fff;*/
+  background-color: #edcfa9;
+  font-family: sans-serif;
+}
+
+.container
+{
+  width: 1280px;
+  min-height: 500px; /* this make the vertical area . occupied the vertical area how big the number is how big the row gonna be */
+  background-color: #edcfa9;
+  /*background: #fff;*/
+  margin : 70px auto 0; /* margin 70px is the space betweent the header and the body // auto 0; means saty in middle. */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container .box
+{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #edcfa9;
+  margin: 10px; /* once agian margin is the space between the box itself. */
+  box-sizing: border-box;
+  display: inline-block;
+
+}
+
+.container .box .imgbox
+{
+  position: relative;
+  overflow: hidden;
+}
+
+.container .box .imgbox img
+{
+  height: 300px;
+  width: 300px;
+  transition: transform 3s;
+  display: block;
+
+}
+
+.container .box:hover .imgbox img
+{
+ transform: scale(1.1);
+}
+
+.container .box .details
+{
+  position: absolute;  /* position absolute must be named before top down left right in order to mantained the center .*/
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.4);
+
+  /* quater half add this */
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+/* then this */
+.container .box:hover .details
+{
+  transform: scaleY(1);
+}
+
+.container .box .details .content
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  font-family: 'Sriracha', cursive;
+  -webkit-text-stroke: .2px black;
+  color: #ffefa0;
+}
+
+.container .box .details .content h2
+{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: 'Sriracha', cursive;
+  -webkit-text-stroke: .2px black;
+  color: #ffefa0;
+
+}
+
+.container .box:hover .details .content h2
+{
+  transform: scale(1.1);
+  transition: transform 3s;
+}
+
+.buttondetail
+{
+  margin: 0;
+  color: #ffefa0;
+  font-family: 'Sriracha', cursive;
+  -webkit-text-stroke: .2px black;
+
+}
+
+.buttondetail:hover
+{
+  transform:scale(2);
+  transition:transform 2s;
+}
